@@ -2,5 +2,5 @@ from django.shortcuts import render
 
 from django.http import HttpResponse
 
-def home(request):
-    return HttpResponse("¡Bienvenido a mi página web!")
+def inicio(request):
+    return render(request, 'pagina/inicio.html')
